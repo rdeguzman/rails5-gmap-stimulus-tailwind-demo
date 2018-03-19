@@ -12,3 +12,8 @@
 # bundle exec rake db:migrate
 ```
 
+## Install webpacker
+
+```
+# bundle exec rake webpacker:install
+```
