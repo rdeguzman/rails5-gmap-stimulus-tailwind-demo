@@ -8,5 +8,6 @@
 # yarn add stimulus
 # gem install -V bundler --no-ri --no-rdoc
 # bundle install
+# bundle exec rake db:create
 ```
 

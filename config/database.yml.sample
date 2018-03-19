@@ -13,7 +13,7 @@ test:
   host:     localhost
   port:     5432
   encoding: utf8
-  database: iris_test
+  database: rails5-gmap-demo
   pool:     5
   username: rupert
   password: mypassword
