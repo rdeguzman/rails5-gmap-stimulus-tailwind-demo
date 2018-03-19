@@ -1,0 +1,7 @@
+{
+  "name": "rails5-gmap-demo",
+  "private": true,
+  "dependencies": {
+    "stimulus": "^1.0.1"
+  }
+}
