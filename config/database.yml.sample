@@ -1,0 +1,39 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  port:     5432
+  encoding: utf8
+  database: rails5-gmap-demo
+  pool:     5
+  username: rupert
+  password: mypassword
+
+test:
+  adapter:  postgresql
+  host:     localhost
+  port:     5432
+  encoding: utf8
+  database: iris_test
+  pool:     5
+  username: rupert
+  password: mypassword
+
+staging:
+  adapter:  postgresql
+  host:     localhost
+  port:     5432
+  encoding: utf8
+  database: rails5-gmap-demo
+  pool:     5
+  username: rupert
+  password: mypassword
+
+production:
+  adapter:  postgresql
+  host:     localhost
+  port:     5432
+  encoding: utf8
+  database: rails5-gmap-demo
+  pool:     5
+  username: rupert
+  password: mypassword
