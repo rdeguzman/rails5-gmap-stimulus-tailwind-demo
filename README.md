@@ -1,5 +1,7 @@
 # README
 
+Below is a simple demo using rails5 + webpacker + stimulus + google maps.
+
 ## Install
 
 Install webpacker + stimulusjs
@@ -10,7 +12,7 @@ Install webpacker + stimulusjs
 # yarn add stimulus
 # gem install -V bundler --no-ri --no-rdoc
 # bundle install
-# bundle exec rake webpacker:install
+# yarn install
 ```
 
 ## Setup database
@@ -19,7 +21,10 @@ Install webpacker + stimulusjs
 # bundle exec rake db:migrate
 ```
 
-## Run rails for the first time
+## Run rails server
 ```
 # bundle exec rails s -b 0.0.0.0 -e development -p 3000
 ```
+And browse http://127.0.0.1:3000/maps/demo_filtering
+
+![MacDown Screenshot](demo.gif)
