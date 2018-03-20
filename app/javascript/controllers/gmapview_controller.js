@@ -13,6 +13,16 @@ export default class extends Controller {
     const el = this.element.id
     this.gmaps = new MapsUtility(opts)
     this.gmaps.initMap(el)
+
+    this.load()
+  }
+
+  load() {
+    fetch(this.data.get("url"))
+      .then(response => response.json())
+      .then(json => {
+        this.gmaps.addMarkers(json)
+      })
   }
 
 }
