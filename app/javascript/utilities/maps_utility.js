@@ -29,7 +29,7 @@ export default class MapsUtility {
         icon: {
           path: google.maps.SymbolPath.CIRCLE,
           scale: 8,
-          fillColor: "red",
+          fillColor: v.available ? "green" : "red",
           fillOpacity: 1.0,
           strokeColor: "black",
           strokeWeight: 2
