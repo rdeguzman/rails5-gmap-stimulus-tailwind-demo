@@ -21,10 +21,19 @@ export default class MapsUtility {
     json_array.forEach( v => {
 
       let pos = {lat: parseFloat(v.lat), lng: parseFloat(v.lng)}
+
       new google.maps.Marker({
         position: pos,
         map: this.map,
-        title: v.vehicle_name
+        title: v.vehicle_name,
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 8,
+          fillColor: "red",
+          fillOpacity: 1.0,
+          strokeColor: "black",
+          strokeWeight: 2
+        }
       })
 
       bounds.extend(pos)
