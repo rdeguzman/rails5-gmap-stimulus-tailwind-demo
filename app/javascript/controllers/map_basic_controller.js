@@ -1,5 +1,5 @@
 import { Controller } from "stimulus"
-import MapsUtility from "../utilities/maps_utility"
+import MapBasicUtility from "../utilities/map_basic_utility"
 
 export default class extends Controller {
 
@@ -7,7 +7,7 @@ export default class extends Controller {
     let opts = {
       google: window.google || {},
     }
-    this.gmaps = new MapsUtility(opts)
+    this.gmaps = new MapBasicUtility(opts)
   }
 
   connect() {

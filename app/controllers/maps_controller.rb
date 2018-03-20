@@ -1,6 +1,6 @@
 class MapsController < ApplicationController
 
-  def index
+  def demo_basic
   end
 
   def demo_filtering

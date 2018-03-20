@@ -1,4 +1,4 @@
-export default class MapsUtility {
+export default class MapBasicUtility {
   constructor(opts) {
     this.google = opts.google || {}
   }
