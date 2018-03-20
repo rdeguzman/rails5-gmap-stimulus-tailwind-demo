@@ -8,7 +8,7 @@ export default class extends Controller {
       google: window.google || {},
     }
     this.gmaps = new MapsUtility(opts)
-    this.gmaps.initMap()
+    this.gmaps.initMap('mapdiv')
   }
 
 }

@@ -3,17 +3,14 @@ export default class MapsUtility {
     this.google = opts.google || {}
   }
 
-  initMap() {
+  initMap(div_element) {
     const google = this.google
+
     let uluru = {lat: -25.363, lng: 131.044}
-    let map = new google.maps.Map(
-      document.getElementById('map'), {
+    this.map = new google.maps.Map(
+      document.getElementById(div_element), {
       zoom: 4,
       center: uluru
-    });
-    let marker = new google.maps.Marker({
-      position: uluru,
-      map: map
     });
   }
 }
