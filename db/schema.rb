@@ -16,9 +16,15 @@ ActiveRecord::Schema.define(version: 20180319093401) do
   enable_extension "plpgsql"
 
   create_table "vehicles", force: :cascade do |t|
-    t.string "name"
-    t.float "latitude"
-    t.float "longitude"
+    t.string "vehicle_name"
+    t.float "lat"
+    t.float "lng"
+    t.boolean "available", default: true
+    t.string "transmission"
+    t.string "body_type"
+    t.integer "positive_review_count", default: 0
+    t.integer "negative_review_count", default: 0
+    t.integer "total_trips", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
