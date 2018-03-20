@@ -7,7 +7,7 @@ Below is a simple demo using rails5 + webpacker + stimulus + google maps.
 Install webpacker + stimulusjs
 
 ```
-# rails new rails5-gmap-demo --database=postgresql --skip-sprockets --skip-bundle --skip-coffee --skip-test --webpack
+# rails new rails5-gmap-stimulus-demo --database=postgresql --skip-sprockets --skip-bundle --skip-coffee --skip-test --webpack
 # cd rails5-gmap-demo
 # yarn add stimulus
 # gem install -V bundler --no-ri --no-rdoc
