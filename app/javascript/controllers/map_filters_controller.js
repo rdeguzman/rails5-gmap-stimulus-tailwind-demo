@@ -24,6 +24,11 @@ export default class extends Controller {
       })
   }
 
+  all() {
+    console.log("Show all")
+    this.gmaps.showAll()
+  }
+
   available() {
     console.log("Show only available")
     this.gmaps.showAvailable(true)

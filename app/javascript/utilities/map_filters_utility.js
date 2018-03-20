@@ -60,5 +60,11 @@ export default class MapFiltersUtility {
 
     })
   }
+
+  showAll() {
+    this.data_array.forEach( obj => {
+      obj.marker.setMap(this.map)
+    })
+  }
 }
 
