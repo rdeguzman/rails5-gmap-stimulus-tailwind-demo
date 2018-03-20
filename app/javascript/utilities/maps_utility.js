@@ -18,12 +18,13 @@ export default class MapsUtility {
     const google = this.google
     let bounds = new google.maps.LatLngBounds()
 
-    json_array.forEach( vehicle => {
-      let pos = {lat: vehicle.latitude, lng: vehicle.longitude}
+    json_array.forEach( v => {
+
+      let pos = {lat: parseFloat(v.lat), lng: parseFloat(v.lng)}
       new google.maps.Marker({
         position: pos,
         map: this.map,
-        title: vehicle.name
+        title: v.vehicle_name
       })
 
       bounds.extend(pos)
