@@ -5,11 +5,13 @@
 </div>
 
 <div data-controller="map-filters" data-map-filters-url="/sample_data.json">
-  <div id="filters">
-    Show Only:
-    <button data-action="map-filters#all">ALL</button>
-    <button data-action="map-filters#available">Available</button>
-    <button data-action="map-filters#inUse">InUse</button>
+
+  <div class="inline-flex mb-1">
+    <label>Show Only:</label>
+    <button class="btn btn-blue btn-group rounded-l" data-action="map-filters#all">ALL</button>
+    <button class="btn btn-blue btn-group" data-action="map-filters#available">Available</button>
+    <button class="btn btn-blue btn-group rounded-r" data-action="map-filters#inUse">InUse</button>
   </div>
+
   <div id="mapdiv"></div>
 </div>
