@@ -14,6 +14,7 @@ export default class extends Controller {
     this.gmaps.initMap("mapdiv")
 
     this.load()
+    this.toggleButton("btnAll")
   }
 
   load() {
@@ -24,19 +25,32 @@ export default class extends Controller {
       })
   }
 
+  toggleButton(btnId) {
+    let btnCollection = this.element.getElementsByClassName("btn")
+    Array.from(btnCollection).forEach(el => {
+      if(el.id == btnId)
+        el.classList.add("btn-active")
+      else
+        el.classList.remove("btn-active")
+    })
+  }
+
   all() {
-    console.log("Show all")
+    console.log("Show all: ", this.element)
     this.gmaps.showAll()
+    this.toggleButton("btnAll")
   }
 
   available() {
     console.log("Show only available")
     this.gmaps.showAvailable(true)
+    this.toggleButton("btnAvailable")
   }
 
   inUse() {
     console.log("Show only inUse")
     this.gmaps.showAvailable(false)
+    this.toggleButton("btnInUse")
   }
 
 }
