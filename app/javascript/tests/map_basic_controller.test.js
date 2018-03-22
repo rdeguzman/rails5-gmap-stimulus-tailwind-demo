@@ -1,7 +1,7 @@
 import {Application} from 'stimulus'
 import MapBasicController from '../controllers/map_basic_controller'
 
-describe('MapBasicController', () => {
+describe.skip('MapBasicController', () => {
   let dom
 
   beforeEach(() => {
