@@ -13,12 +13,19 @@ Install webpacker + stimulusjs
 # gem install -V bundler --no-ri --no-rdoc
 # bundle install
 # yarn install
+# yarn install jest --dev
 ```
 
 ## Setup database
 ```
 # bundle exec rake db:create
 # bundle exec rake db:migrate
+```
+
+## Testing
+
+```
+# yarn add jest babel-jest --dev
 ```
 
 ## Run rails server
