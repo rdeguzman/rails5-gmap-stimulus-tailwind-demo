@@ -1,10 +1,10 @@
 # README
 
-Below is a simple demo using rails5 + webpacker + stimulus + google maps.
+Below is a simple demo using rails5 + webpacker + stimulus + google maps + tailwindcs.
 
 ## Install
 
-Install webpacker + stimulusjs
+Install webpacker + stimulusjs + tailwind + jest
 
 ```
 # rails new rails5-gmap-stimulus-demo --database=postgresql --skip-sprockets --skip-bundle --skip-coffee --skip-test --webpack
@@ -13,7 +13,6 @@ Install webpacker + stimulusjs
 # gem install -V bundler --no-ri --no-rdoc
 # bundle install
 # yarn install
-# yarn install jest --dev
 ```
 
 ## Setup database
@@ -24,8 +23,11 @@ Install webpacker + stimulusjs
 
 ## Testing
 
+We use rspec for ruby and jest for javascript testing
+
 ```
 # yarn add jest babel-jest --dev
+# yarn test
 ```
 
 ## Run rails server
