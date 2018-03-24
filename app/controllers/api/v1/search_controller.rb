@@ -3,7 +3,7 @@ module Api::V1
 
     def index
       vehicles = Vehicle.all
-      render json: vehicles.to_json, status: :ok
+      render json: vehicles, status: :ok
     end
 
   end

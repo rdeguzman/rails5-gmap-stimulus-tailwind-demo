@@ -6,7 +6,13 @@ RSpec.describe VehicleSerializer do
       :id,
       :vehicle_name,
       :lat,
-      :lng
+      :lng,
+      :img,
+      :available,
+      :transmission,
+      :positive_review_count,
+      :negative_review_count,
+      :total_trips,
     ]
   end
 
