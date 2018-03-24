@@ -34,7 +34,6 @@ namespace :seed do
       v = Vehicle.new
       v.lat = obj[:lat].to_f
       v.lng = obj[:lng].to_f
-      v.vehicle_name = obj[:vehicle_name]
       v.year = year
       v.make = make
       v.model = model
@@ -46,8 +45,6 @@ namespace :seed do
       v.negative_review_count = obj[:negative_review_count]
       v.total_trips = obj[:total_trips]
       v.save
-
-      puts v.vehicle_name
     end
 
   end
