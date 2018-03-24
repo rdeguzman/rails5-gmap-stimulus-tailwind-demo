@@ -2,7 +2,8 @@ module Api::V1
   class SearchController < ApplicationController
 
     def index
-      render json: {}, status: :ok
+      vehicles = Vehicle.all
+      render json: vehicles.to_json, status: :ok
     end
 
   end
