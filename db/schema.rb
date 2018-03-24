@@ -17,8 +17,12 @@ ActiveRecord::Schema.define(version: 20180319093401) do
 
   create_table "vehicles", force: :cascade do |t|
     t.string "vehicle_name"
+    t.string "year"
+    t.string "make"
+    t.string "model"
     t.float "lat"
     t.float "lng"
+    t.string "img"
     t.boolean "available", default: true
     t.string "transmission"
     t.string "body_type"
