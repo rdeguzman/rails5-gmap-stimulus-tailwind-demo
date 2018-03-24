@@ -21,7 +21,7 @@ export default class MapFiltersUtility {
 
     json_array.forEach( v => {
 
-      let pos = {lat: parseFloat(v.lat), lng: parseFloat(v.lng)}
+      let pos = {lat: v.lat, lng: v.lng}
 
       let m = new google.maps.Marker({
         position: pos,
