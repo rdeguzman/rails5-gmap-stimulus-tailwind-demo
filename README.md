@@ -19,6 +19,7 @@ Install webpacker + stimulusjs + tailwind + jest
 ```
 # bundle exec rake db:create
 # bundle exec rake db:migrate
+# bundle exec rake seed:vehicles file="public/sample_data.json"
 ```
 
 ## Testing
